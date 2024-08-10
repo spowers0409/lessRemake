@@ -1,0 +1,293 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  flex: 1;
+}
+.navbar {
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+.navbar .navbar-brand img {
+  max-height: 50px;
+}
+.navbar .navbar-collapse {
+  justify-content: center;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.75rem;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #15F5BA;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #15F5BA;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+.navbar-toggler-icon:before {
+  top: -8px;
+}
+.navbar-toggler-icon:after {
+  top: 8px;
+}
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:hover:before,
+.navbar-toggler-icon:hover:after {
+  background-color: #09ce9a;
+}
+.nav-link {
+  color: #090717 !important;
+  transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: #15F5BA !important;
+}
+.nav-link.active {
+  color: #15F5BA !important;
+  font-weight: bold;
+  border-bottom: 2px solid #15F5BA;
+}
+.shop-info,
+.gallery-info,
+.about-section {
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  padding: 40px 0;
+  color: #555;
+}
+.shop-info h2,
+.gallery-info h2,
+.about-section h2 {
+  color: #211951;
+}
+.shop-info p,
+.gallery-info p,
+.about-section p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.shop-content {
+  background-color: #fff;
+  padding: 40px 0;
+}
+.search-bar {
+  margin-bottom: 20px;
+}
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.filters h5 {
+  margin-bottom: 15px;
+  color: #211951;
+}
+.filters .form-check-label {
+  color: #555;
+}
+.img-fluid,
+.gallery-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.img-fluid.gallery-image,
+.gallery-image img.gallery-image {
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.img-fluid.gallery-image:hover,
+.gallery-image img.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card .card-img-top,
+.card .card-img {
+  border-radius: 10px 10px 0 0;
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+.card .card-body {
+  padding: 20px;
+}
+.card .card-body .card-title {
+  font-size: 18px;
+  color: #211951;
+  margin-bottom: 10px;
+}
+.card .card-body .card-text {
+  color: #555;
+}
+.btn-primary,
+.btn-success {
+  transition: transform 0.3s ease-in-out;
+  color: #fff !important;
+}
+.btn-primary:hover,
+.btn-success:hover {
+  transform: scale(1.1);
+}
+.btn-primary {
+  background-color: #211951 !important;
+  border-color: #211951 !important;
+}
+.btn-success {
+  background-color: #15F5BA !important;
+  border-color: #15F5BA !important;
+}
+.btn-success:hover {
+  transform: scale(1.05);
+}
+.footer {
+  background-color: #FFF;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+}
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer .list-inline {
+  margin: 5px 0;
+  padding: 0;
+}
+.footer .list-inline .list-inline-item {
+  margin: 0 10px;
+}
+.footer .list-inline .list-inline-item a {
+  color: #211951;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.footer .list-inline .list-inline-item a:hover {
+  color: #15F5BA;
+}
+.clickable-image {
+  cursor: pointer;
+}
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  z-index: 1020;
+}
+.carousel {
+  padding: 0 30px;
+}
+.carousel .carousel-item {
+  margin-bottom: 0 10px;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  width: 5%;
+  z-index: 10;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.carousel .carousel-control-prev .carousel-control-prev-icon,
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon,
+.carousel .carousel-control-next .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.custom-request-form h2 {
+  margin-bottom: 20px;
+  color: #211951;
+}
+.custom-request-form .form-control,
+.custom-request-form .form-control-file {
+  margin-bottom: 15px;
+}
+.custom-request-form .btn-primary {
+  background-color: #211951;
+  border-color: #211951;
+  transition: transform 0.3s ease-in-out;
+}
+.custom-request-form .btn-primary:hover {
+  transform: scale(1.05);
+}
+.resource-info {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+.resource-info h2 {
+  color: #211951;
+}
+.resource-info p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.social-media-icons a {
+  color: #211951;
+  transition: color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  margin: 5px;
+  display: inline-block;
+}
+.social-media-icons a:hover {
+  transform: scale(1.2);
+}
+.social-media-icons .facebook-icon:hover i {
+  color: #1877F2 !important;
+}
+.social-media-icons .instagram-icon:hover i {
+  color: #E1306C !important;
+}
+.social-media-icons .snapchat-icon:hover i {
+  color: #FFFC00 !important;
+}
+.social-media-icons .github-icon:hover i {
+  color: #333 !important;
+}
