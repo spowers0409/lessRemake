@@ -2,10 +2,12 @@ body,
 html {
   height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f9f9f9;
 }
 .content {
   flex: 1;
@@ -21,6 +23,24 @@ html {
 }
 .navbar .navbar-collapse {
   justify-content: center;
+}
+.navbar .nav-item {
+  margin-left: 15px;
+}
+.navbar .nav-link {
+  color: #211951;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.navbar .nav-link:hover {
+  color: #15F5BA;
+}
+.navbar .nav-link.active {
+  color: #15F5BA;
+  font-weight: bold;
+  border-bottom: 2px solid #15F5BA;
 }
 .navbar-toggler {
   border: none;
@@ -55,18 +75,6 @@ html {
 .navbar-toggler-icon:hover:before,
 .navbar-toggler-icon:hover:after {
   background-color: #09ce9a;
-}
-.nav-link {
-  color: #090717 !important;
-  transition: color 0.3s ease-in-out;
-}
-.nav-link:hover {
-  color: #15F5BA !important;
-}
-.nav-link.active {
-  color: #15F5BA !important;
-  font-weight: bold;
-  border-bottom: 2px solid #15F5BA;
 }
 .shop-info,
 .gallery-info,
@@ -290,4 +298,25 @@ html {
 }
 .social-media-icons .github-icon:hover i {
   color: #333 !important;
+}
+.gallery-section {
+  padding: 40px 0;
+}
+.gallery-image {
+  width: 100%;
+  /* Ensures the images take up the full width of their container */
+  height: 200px;
+  /* Fixed height to ensure consistency */
+  object-fit: cover;
+  /* Ensures the image covers the entire container */
+  object-position: center;
+  /* Center the image within the container */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
